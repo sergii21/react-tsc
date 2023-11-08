@@ -1,10 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import NewTodo from './components/NewTodo';
+import TodoList from './components/TodoList';
+import logo from './logo.svg';
 
 function App() {
+  const todos = [
+    { id: 1, text: 'jhhj' },
+    { id: 2, text: 'jhhj1' },
+  ]
   return (
     <div className="App">
+      <NewTodo/>
+      <TodoList items={todos}/>
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
